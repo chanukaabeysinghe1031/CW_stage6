@@ -1,0 +1,128 @@
+_________________________________________________________
+Account Number      :- 1000
+Customer Name       :- Saman 
+Password            :- 1444
+Account Balance     :- 5000.0
+Automatic Withdrowal:- 200.0
+Automstic Deposit    :- 300.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1001
+Customer Name       :- Saman 
+Password            :- 1444
+Account Balance     :- 3.0
+Automatic Withdrowal:- 100.0
+Automstic Deposit    :- 400.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1002
+Customer Name       :- Saman 
+Password            :- 1444
+Account Balance     :- 6000.0
+Automatic Withdrowal:- 500.0
+Automstic Deposit    :- 1000.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1005
+Customer Name       :- Supipi
+Password            :- 999
+Account Balance     :- 49999.0
+Automatic Withdrowal:- 200.0
+Automstic Deposit    :- 600.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1004
+Customer Name       :- Supipi
+Password            :- 999
+Account Balance     :- 600.0
+Automatic Withdrowal:- 100.0
+Automstic Deposit    :- 500.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1006
+Customer Name       :- Supipi
+Password            :- 999
+Account Balance     :- 7000.0
+Automatic Withdrowal:- 500.0
+Automstic Deposit    :- 1000.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1007
+Customer Name       :- Suwin
+Password            :- 498
+Account Balance     :- 50000.0
+Automatic Withdrowal:- 400.0
+Automstic Deposit    :- 500.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1008
+Customer Name       :- Suwin
+Password            :- 498
+Account Balance     :- 500.0
+Automatic Withdrowal:- 100.0
+Automstic Deposit    :- 400.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1009
+Customer Name       :- Suwin
+Password            :- 498
+Account Balance     :- 90000.0
+Automatic Withdrowal:- 100.0
+Automstic Deposit    :- 5000.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1010
+Customer Name       :- Suwin
+Password            :- 498
+Account Balance     :- 9444.0
+Automatic Withdrowal:- 300.0
+Automstic Deposit    :- 500.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1011
+Customer Name       :- Suwin
+Password            :- 498
+Account Balance     :- 50000.0
+Automatic Withdrowal:- 500.0
+Automstic Deposit    :- 2000.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1012
+Customer Name       :- Suwin
+Password            :- 498
+Account Balance     :- 60000.0
+Automatic Withdrowal:- 100.0
+Automstic Deposit    :- 200.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1013
+Customer Name       :- Suwin
+Password            :- 498
+Account Balance     :- 8000.0
+Automatic Withdrowal:- 899.0
+Automstic Deposit    :- 900.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1014
+Customer Name       :- Suwin
+Password            :- 498
+Account Balance     :- 6000.0
+Automatic Withdrowal:- 600.0
+Automstic Deposit    :- 500.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1015
+Customer Name       :- Suwin
+Password            :- 498
+Account Balance     :- 6000.0
+Automatic Withdrowal:- 600.0
+Automstic Deposit    :- 600.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1016
+Customer Name       :- Suwin
+Password            :- 498
+Account Balance     :- 5000.0
+Automatic Withdrowal:- 100.0
+Automstic Deposit    :- 300.0
+_________________________________________________________
