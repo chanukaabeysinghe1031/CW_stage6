@@ -28,7 +28,9 @@ class Transaction {
             }
         }
 
+        char input;
         if (!(sendBankAccount == null && receiveBankAccount == null)) {
+            System.out.println("===================================================================================================================");
             System.out.println("Please enter the amount of currency you want to transfer ");
             transferCurrency = UserInterface.validate();
 
@@ -37,26 +39,50 @@ class Transaction {
 
                 System.out.println("Please notice that tour balance "
                         + "will be reduce than 10. ");
-                sendBankAccount.setAccountBalance(sendBankAccount.getAccountBalance() - transferCurrency);
-                receiveBankAccount.setAccountBalance(receiveBankAccount.getAccountBalance() + transferCurrency);
-                System.out.println("Your new balance of the bank account "
-                        + transferFromAccountNumber + " is " + sendBankAccount.getAccountBalance());
-                System.out.println("Your new balance of the bank account "
-                        + transferToAccountNumber + " is " + receiveBankAccount.getAccountBalance());
+                displayForecastAfterTransaction(sendBankAccount,receiveBankAccount,transferCurrency);
+                System.out.println("To confirm the transfer, please enter [Y]es or any other character");
+                UserInterface.userInput.next().charAt(0);
 
             } else if (!(sendBankAccount.getAccountBalance() - transferCurrency < 10
                     || receiveBankAccount.getAccountBalance() + transferCurrency > 100000)) {
-
-                sendBankAccount.setAccountBalance(sendBankAccount.getAccountBalance() - transferCurrency);
-                receiveBankAccount.setAccountBalance(receiveBankAccount.getAccountBalance() + transferCurrency);
-                System.out.println("Your new balance of the bank account "
-                        + transferFromAccountNumber + " is " + sendBankAccount.getAccountBalance());
-                System.out.println("Your new balance of the bank account "
-                        + transferToAccountNumber + " is " + receiveBankAccount.getAccountBalance());
+                displayForecastAfterTransaction(sendBankAccount,receiveBankAccount,transferCurrency);
+                System.out.println();
 
             } else {
                 System.out.println("Sorry!! You can't proceed the transaction");
             }
         }
+    }
+
+    //This method is to display forecast of the account balances that will be after the transaction
+    public static void displayForecastAfterTransaction(BankAccount sendBankAccount , BankAccount receiveBankAccount,double amount){
+        System.out.println("===================================================================================================================");
+        System.out.println("The balance of the bank account which send currency(" + sendBankAccount.getAccountNumber()+ ") will be  "
+                                        + (sendBankAccount.getAccountBalance()-amount));
+        System.out.println("The balance of the bank account which is  received currency("+receiveBankAccount.getAccountNumber()+") will be  "
+                                        + (receiveBankAccount.getAccountBalance()+amount));
+        System.out.println("===================================================================================================================");
+    }
+
+    //This method is to display account balances that will be after the transaction
+    public static void displayAccountBalance(BankAccount sendBankAccount , BankAccount receiveBankAccount,double amount){
+        System.out.println("===================================================================================================================");
+        System.out.println("The balance of the bank account which send currency(" + sendBankAccount.getAccountNumber()+ ") is "
+                + sendBankAccount.getAccountBalance());
+        System.out.println("The balance of the bank account which is  received currency("+receiveBankAccount.getAccountNumber()+") is "
+                + receiveBankAccount.getAccountBalance());
+        System.out.println("===================================================================================================================");
+    }
+
+    //This method is to change the account balance after the
+    public static void doTransfer(BankAccount sendBankAccount,BankAccount receivedBankAccount, double amount){
+            sendBankAccount.setAccountBalance(sendBankAccount.getAccountBalance()-amount);
+            receivedBankAccount.setAccountBalance(receivedBankAccount.getAccountBalance()+amount);
+    }
+
+    //This method is to undo the transaction
+    public static void rollBack(BankAccount sendBankAccount,BankAccount receivedBankAccount, double amount) {
+            sendBankAccount.setAccountBalance(sendBankAccount.getAccountBalance()+amount);
+            receivedBankAccount.setAccountBalance(receivedBankAccount.getAccountBalance()-amount);
     }
 }
