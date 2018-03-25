@@ -134,3 +134,19 @@ Account Balance     :- 8999.0
 Automatic Withdrowal:- 499.0
 Automstic Deposit    :- 588.0
 _________________________________________________________
+_________________________________________________________
+Account Number      :- 1018
+Customer Name       :- Nimal
+Password            :- 333
+Account Balance     :- 5000.0
+Automatic Withdrowal:- 200.0
+Automstic Deposit    :- 400.0
+_________________________________________________________
+_________________________________________________________
+Account Number      :- 1019
+Customer Name       :- Nimal
+Password            :- 333
+Account Balance     :- 4000.0
+Automatic Withdrowal:- 200.0
+Automstic Deposit    :- 100.0
+_________________________________________________________

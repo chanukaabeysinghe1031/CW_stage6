@@ -232,6 +232,7 @@ class UserInterface implements Serializable {
                                 indexOfBankAccount++;
                             }
                         } while (moreBankAccounts);
+                        BankAccount.computeInterest2(bankAccountsOfTheUser);
                     }
                     break;
 
