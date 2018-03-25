@@ -179,16 +179,17 @@ public class BankAccount implements Serializable {
         for (int i = 0; i < 10; i++) {
             //Check first that bank account is null
             if(bankAccountsOfTheUser[i]!=null) {
-                System.out.println("==================================================================================");
-                System.out.println("====================="+bankAccountsOfTheUser[i].getAccountNumber()+"=====================================");
-                System.out.println("==================================================================================");
+
+                System.out.println("====================================================");
+                System.out.println("============ Account Number : - "+bankAccountsOfTheUser[i].getAccountNumber()
+                                                                          +"================");
+                System.out.println("====================================================");
+
                 //get the neceassary informaion to calculate forecast from the object
                 autoDeposit = bankAccountsOfTheUser[i].autoDeposit;
                 autoWithdrawal = bankAccountsOfTheUser[i].autoWithdrowal;
                 currentBalance = bankAccountsOfTheUser[i].accountBalance;
 
-                System.out.println("-----------------------------------------------------------");
-                System.out.println("The current balance is " + currentBalance);
                 System.out.println("Year     Begining Balance    Ending balance");
                 previousBalance = (int) currentBalance;
 

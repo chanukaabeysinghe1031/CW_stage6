@@ -33,7 +33,7 @@ class User implements Serializable {
 
         System.out.println("Please press the 'Enter' key");
         userInput.nextLine();
-        System.out.println("Please enter new user if");
+        System.out.println("Please enter new user id");
         System.out.print("Enter : ");
         user_ID=UserInterface.validate();
 

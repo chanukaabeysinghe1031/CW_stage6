@@ -265,7 +265,7 @@ class UserInterface implements Serializable {
                         //the last index in allBankAccounts after a bank account added to the array
                         int index = 0;
 
-                        for (; index < bankAccountsOfTheUser.length; index++) {
+                        for (; index < allBankAccounts.size(); index++) {
                             if (user_ID == allBankAccounts.get(index).getUser_ID()) {
                                 indexOfLastBankAccount++;
                                 bankAccountsOfTheUser[indexOfLastBankAccount] = allBankAccounts.get(index);
