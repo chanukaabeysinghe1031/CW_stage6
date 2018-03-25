@@ -41,12 +41,41 @@ class Transaction {
                         + "will be reduce than 10. ");
                 displayForecastAfterTransaction(sendBankAccount,receiveBankAccount,transferCurrency);
                 System.out.println("To confirm the transfer, please enter [Y]es or any other character");
-                UserInterface.userInput.next().charAt(0);
+                input = UserInterface.userInput.next().charAt(0);
+
+                if(input=='y'||input=='Y'){
+                    doTransfer(sendBankAccount,receiveBankAccount,transferCurrency);
+                    displayAccountBalance(sendBankAccount,receiveBankAccount,transferCurrency);
+                }
+
+                //To undo the transaction
+                System.out.println("If you want to undo the transaction please enter [y]es, or else any other character");
+                char input2=UserInterface.userInput.next().charAt(0);
+                if(input2=='y'||input2=='Y'){
+                    rollBack(sendBankAccount,receiveBankAccount,transferCurrency);
+                    displayAccountBalance(sendBankAccount,receiveBankAccount,transferCurrency);
+                }
+
+
 
             } else if (!(sendBankAccount.getAccountBalance() - transferCurrency < 10
                     || receiveBankAccount.getAccountBalance() + transferCurrency > 100000)) {
                 displayForecastAfterTransaction(sendBankAccount,receiveBankAccount,transferCurrency);
-                System.out.println();
+
+                System.out.println("To confirm the transfer, please enter [Y]es or any other character");
+                input = UserInterface.userInput.next().charAt(0);
+                if(input=='y'||input=='Y'){
+                    doTransfer(sendBankAccount,receiveBankAccount,transferCurrency);
+                    displayAccountBalance(sendBankAccount,receiveBankAccount,transferCurrency);
+                }
+
+                //To undo the transaction
+                System.out.println("If you want to undo the transaction please enter [y]es, or else any other character");
+                char input2=UserInterface.userInput.next().charAt(0);
+                if(input2=='y'||input2=='Y'){
+                    rollBack(sendBankAccount,receiveBankAccount,transferCurrency);
+                    displayAccountBalance(sendBankAccount,receiveBankAccount,transferCurrency);
+                }
 
             } else {
                 System.out.println("Sorry!! You can't proceed the transaction");
